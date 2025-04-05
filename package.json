@@ -1,0 +1,20 @@
+{
+  "name": "staying-relevant-as-a-programmer-in-the-world-with-llms",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --base /staying-relevant-as-a-programmer-in-the-world-with-llms/",
+    "dev": "slidev --open",
+    "export": "slidev export",
+    "deploy": "npm run build && cp -r static dist/static && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@slidev/cli": "^51.3.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
